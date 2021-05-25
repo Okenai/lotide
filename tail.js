@@ -1,18 +1,18 @@
 const assertEqual = function(actual, expected) {
-  if (actual === expected) {
+  if (actual.toString() === expected.toString()) {
     console.log(`✅✅✅ Assertion passed: ${actual} === ${expected}`);
   } else {
     console.log(`❌❌❌Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
-const head = function(array) {
-  if(array.length>=1) {let answer = array[0];
+
+const tail = function(array) {
+  let answer = array.slice(1);
   return answer;
-} else {
-  return 'undefined'
-}
 };
 
-assertEqual(head([1]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(tail(["Hello", "Lighthouse", "Labs"]),["Lighthouse", "Labs"]);
+
+assertEqual(tail([5, 7, 8]),[1, 2]);
+
