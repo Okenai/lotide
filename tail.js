@@ -1,6 +1,6 @@
 
 const tail = function(array) {
-  let answer = array.slice(1);
+  let answer = array.slice(array.length-1);
   return answer;
 };
 
