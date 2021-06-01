@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@okenai/lotide",
   "version": "1.0.0",
-  "description": "Lotide practice",
+  "description": "Lotide project submission as part of Lighthouse Labs curriculum",
   "main": "index.js",
   "directories": {
     "test": "test"
